@@ -33,13 +33,11 @@ button {
   margin: 0 auto;
 }
 
+/*------------header-container------------*/
 
-
-/*header-container*/
-
-.header{
+.header {
   box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
-    background: #fefefe;
+  background: #fefefe;
 }
 
 .header-container {
@@ -60,10 +58,29 @@ button {
   gap: 28px;
 }
 
+.current {
+  position: relative;
+  color: #bbf330;
+}
+
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  font-weight: 400;
+  background-color: #bbf330;
+}
+
 .nav-link {
   padding: 28px 0;
   display: block;
   font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -83,6 +100,7 @@ button {
   font-size: 13px;
   line-height: 1.5;
   color: #2c2c2c;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -90,9 +108,7 @@ button {
   background: #ffe450;
 }
 
-
-
-/*start-container*/
+/*------------start-container------------*/
 
 .start {
   padding-top: 14px;
@@ -107,7 +123,6 @@ button {
 .start-text-wrap {
   min-width: 511px;
   margin-right: 143px;
-
 }
 
 .start-title {
@@ -116,13 +131,11 @@ button {
   margin-bottom: 28px;
 }
 
-.start-text{
+.start-text {
   padding-bottom: 40px;
 }
 
-
-
-/*about-us-container*/
+/*------------about-us-container------------*/
 
 .about-us {
   background: #ffe550;
@@ -142,13 +155,13 @@ button {
 .title-about-us {
   padding-bottom: 20px;
   font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2;
-    padding-top: 196px;
+  font-size: 42px;
+  line-height: 1.2;
+  padding-top: 196px;
 }
 
 .text-about-us {
-  padding-bottom: 96px;
+  padding-bottom: 40px;
   line-height: 1.5;
   width: 500px;
   font-size: 16px;
@@ -163,11 +176,26 @@ button {
   width: 253px;
 }
 
+.link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #fefefe;
+  margin-bottom: 8px;
+}
+
+.icon {
+  fill: #7eb101;
+}
+
 .advantage-title {
   padding-bottom: 16px;
   font-weight: 700;
-    font-size: 18px;
-    line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .advantage-text {
@@ -185,15 +213,226 @@ button {
 .advantage-button:hover,
 .advantage-button:focus {
   background: #bbf330;
-  border: none;
+  border: nonee;
 }
 
-.about-us-wrap{
+.about-us-wrap {
   padding-left: 90px;
 }
 
-.title-wrap{
+.title-wrap {
   width: 527px;
 }
 
+/*------------dishes-container------------*/
+
+.dishes-title {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.dishes-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dishes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 111px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 101px;
+}
+
+/*-----------rewiews-container------------*/
+
+.reviews {
+  background: #ffe550;
+  min-height: 620px;
+}
+
+.reviews-title {
+  padding-top: 140px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.reviews-text {
+  padding-bottom: 33px;
+}
+
+/*------------order-container------------*/
+
+.order-container {
+  display: flex;
+}
+
+.feedback-wrap {
+  width: 656px;
+}
+
+.order-title {
+  padding-top: 222px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.order-text {
+  width: 532px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 24px;
+}
+
+.order-input {
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 395px;
+  height: 42px;
+  background-color: transparent;
+  margin-bottom: 201px;
+  margin-right: 32px;
+}
+
+.order-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  padding-right: 11px;
+  padding-bottom: 12px;
+}
+
+.order-input:hover,
+.order-input:focus {
+  border: 0.85px solid #7eb101;
+  outline: none;
+}
+
+.order-button {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 103px;
+  height: 42px;
+  background: #bbf330;
+  border: none;
+}
+
+.order-img {
+  margin-top: 176px;
+}
+
+/*------------footer-container------------*/
+
+.footer {
+  background-image: url(/images/Fruit-Futer.jpg);
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 118px;
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-wrap {
+  display: flex;
+  gap: 143px;
+  justify-content: center;
+}
+
+.footer-input-wrap {
+  align-self: flex-end;
+}
+
+.footer-input-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-bottom: 12px;
+}
+
+.footer-input {
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 279px;
+  height: 42px;
+  margin-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border: 0.85px solid #7eb101;
+  outline: none;
+}
+
+.footer-input::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  padding-right: 11px;
+  padding-bottom: 12px;
+}
+
+.footer-button {
+  border: 0.85px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 103px;
+  height: 42px;
+  background: transparent;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-left: 13px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background: #bbf330;
+  border: nonee;
+}
+
+.footer-link {
+  font-weight: 400;
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #7eb101;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.right-wrap{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding: 0 16px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+
+.right-wrap-links{
+  display: flex;
+  gap: 20px;
+}
 

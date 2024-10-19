@@ -28,7 +28,7 @@
         /></a>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link current" href="">Home</a></li>
             <li><a class="nav-link" href="">About</a></li>
             <li><a class="nav-link" href="">Service</a></li>
             <li><a class="nav-link" href="">Menu</a></li>
@@ -72,6 +72,11 @@
             </div>
             <ul class="our-advantages">
               <li class="our-advantage">
+                <div class="link-wrap">
+                  <svg class="icon" width="32" height="32">
+                    <use href="/images/icons.svg#icon-rocket_launch"></use>
+                  </svg>
+                </div>
                 <h3 class="advantage-title">Fasest Delivery</h3>
                 <p class="advantage-text">
                   Our advanced logistics system and dedicated delivery partners
@@ -79,6 +84,11 @@
                 </p>
               </li>
               <li class="our-advantage">
+                <div class="link-wrap">
+                  <svg class="icon" width="32" height="32">
+                    <use href="/images/icons.svg#icon-touch_app"></use>
+                  </svg>
+                </div>
                 <h3 class="advantage-title">Easy To Order</h3>
                 <p class="advantage-text">
                   You can browse through a wide variety of cuisines and
@@ -94,13 +104,148 @@
         </div>
       </section>
 
-      <section class="dishes"></section>
+      <section class="dishes">
+        <div class="container dishes-container">
+          <h2 class="dishes-title">Some of Our Favorites</h2>
+          <p class="dishes-text">Looking for something delicious?</p>
+          <ul class="dishes-list">
+            <li class="dish">
+              <img
+                src="./images/gamburger.png"
+                alt="gamburger"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="dish">
+              <img
+                src="./images/Pasta.png"
+                alt="pasta"
+                width="315"
+                height="315"
+              />
+            </li>
 
-      <section class="reviews"></section>
+            <li class="dish">
+              <img
+                src="./images/pizza.png"
+                alt="pizza"
+                width="315"
+                height="315"
+              />
+            </li>
 
-      <section class="order"></section>
+            <li class="dish">
+              <img
+                src="./images/chicken.png"
+                alt="rice and chicken"
+                width="315"
+                height="315"
+              />
+            </li>
 
-      <footer class="footer"></footer>
+            <li class="dish">
+              <img
+                src="./images/salat.png"
+                alt="salad with salmon"
+                width="315"
+                height="315"
+              />
+            </li>
+
+            <li class="dish">
+              <img
+                src="./images/borshch.png"
+                alt="borshch"
+                width="315"
+                height="315"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container reviews-container">
+          <h2 class="reviews-title">What our Customers Say</h2>
+          <p class="reviews-text">
+            Don't just take our word for it - see what our satisfied customers
+            have to say
+          </p>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="container order-container">
+          <div class="feedback-wrap">
+            <h2 class="order-title">Subscribe To Get Special Offers</h2>
+            <p class="order-text">
+              Order now and receive 10% off your first meal with Enjoy Your
+              Favorite Food From Anywhere.
+            </p>
+            <input
+              class="order-input"
+              type="email"
+              placeholder="Enter your email"
+              name="user-email"
+            />
+            <button class="order-button main-button" type="submit">
+              Subscribe
+            </button>
+          </div>
+
+          <img
+            class="order-img"
+            src="./images/banan.png"
+            alt="banan"
+            width="608px"
+            height="266px"
+          />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-nav-wrap">
+            <a class="logo" href="./index.html"
+              ><img src="./images/Vector.svg" alt="logo"
+            /></a>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li><a class="nav-link" href="">Home</a></li>
+                <li><a class="nav-link" href="">About</a></li>
+                <li><a class="nav-link" href="">Service</a></li>
+                <li><a class="nav-link" href="">Menu</a></li>
+                <li><a class="nav-link" href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-input-wrap">
+            <p class="footer-input-label">Subscribe</p>
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="Enter your email"
+              name="user-email"
+            />
+            <button class="footer-button" type="submit">Subscribe</button>
+            <p class="footer-input-text">
+              By subscribing you agree to with our
+              <a class="footer-link" href="">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="right-wrap">
+            <div class="right-wrap-links">
+              <a class="footer-link" href="">Privacy Policy</a>
+              <a class="footer-link" href="">Terms of Service</a>
+              <a class="footer-link" href="">Cookies Settings</a>
+            </div>
+            <p class="right-text">2022 FoodSta. All right reserved.</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
