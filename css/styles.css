@@ -1,6 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #2c2c2c;
+  font-size: 16px;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
 }
 
 ul,
@@ -24,10 +27,26 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+  font-style: normal;
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
+  border: none;
+}
+
+fieldset {
+  outline: none;
+  border: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
 }
 
 .container {
@@ -138,6 +157,22 @@ button {
   padding-bottom: 40px;
 }
 
+.salad-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+  width: 580px;
+  height: 580px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.salad-border:hover {
+  border: 26px solid #bbf330;
+}
+
+
 /*------------about-us-container------------*/
 
 .about-us {
@@ -148,11 +183,33 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 205px;
+  padding-bottom: 110px;
+}
+
+.apple-img-border {
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  width: 550px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .apple-img {
-  padding-bottom: 126px;
-  padding-top: 127px;
+  border-radius: 100%;
+  background-color: #fefefe;
+  width: 502px;
+  height: 502px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.apple {
+  margin-top: -100px;
 }
 
 .title-about-us {
@@ -160,7 +217,6 @@ button {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
-  padding-top: 196px;
 }
 
 .text-about-us {
@@ -211,6 +267,7 @@ button {
 .advantage-button {
   border: 2px solid #7eb101;
   background: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantage-button:hover,
@@ -245,10 +302,25 @@ button {
 .dishes-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 111px;
+  gap: 32px;
   align-items: center;
   justify-content: center;
   margin-bottom: 101px;
+}
+
+.img-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 16px solid #ffe550;
+  width: 394px;
+  height: 397px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-border:hover {
+  border: 16px solid #bbf330;
 }
 
 /*-----------rewiews-container------------*/
@@ -267,6 +339,71 @@ button {
 
 .reviews-text {
   padding-bottom: 33px;
+}
+
+.review-wrap-container {
+  display: flex;
+  gap: 139px;
+}
+
+.review-wrap {
+  background-color: white;
+  width: 501px;
+  height: 232px;
+  border-radius: 0 25px 25px 25px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.stars-wrap {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 29px;
+}
+
+.star-icon {
+  fill: #ffe550;
+}
+
+.review-text {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 41px;
+}
+
+.person-wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.reviewers-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -16px;
+  width: 1px;
+  height: 52px;
+  background-color: #7eb101;
+}
+
+.person {
+  position: relative;
+}
+
+.reviewers-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.reviewers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /*------------order-container------------*/
@@ -331,6 +468,7 @@ button {
   height: 42px;
   background: #bbf330;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-img {
@@ -406,13 +544,12 @@ button {
   font-size: 13px;
   line-height: 1.5;
   margin-left: 13px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-button:hover,
 .footer-button:focus {
-  background: #bbf330;
-  border: nonee;
+  border: 2px solid #ffe450;
 }
 
 .footer-link {
@@ -487,6 +624,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-form-btn:focus,
@@ -552,6 +690,7 @@ button {
   text-align: center;
   margin-top: 8px;
   margin-left: 144px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:focus,
