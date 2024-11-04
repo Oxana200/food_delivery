@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container header-container">
         <a class="logo" href="./index.html"
-          ><img src="./images/Vector.svg" alt="logo"
+          ><img src="./images/logo.svg" alt="logo"
         /></a>
         <nav class="nav">
           <ul class="nav-list">
@@ -36,11 +36,37 @@
           </ul>
         </nav>
         <button class="main-button" type="button">Order Now</button>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close">
+            <svg class="cross-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-navigation-list-container">
+              <li>
+                <a class="menu-nav-link menu-nav-current" href="">Home</a>
+              </li>
+              <li><a class="menu-nav-link" href="">About</a></li>
+              <li><a class="menu-nav-link" href="">Service</a></li>
+              <li><a class="menu-nav-link" href="">Menu</a></li>
+              <li><a class="menu-nav-link" href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="start">
+      <section class="start hidden">
         <div class="container start-container">
           <div class="start-text-wrap">
             <h1 class="start-title">Enjoy Your Favorite Food From Anywhere</h1>
@@ -58,7 +84,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us hidden">
         <div class="container about-us-container">
           <div class="apple-img-border">
             <div class="apple-img">
@@ -108,7 +134,7 @@
         </div>
       </section>
 
-      <section class="dishes">
+      <section class="dishes hidden">
         <div class="container dishes-container">
           <h2 class="dishes-title">Some of Our Favorites</h2>
           <p class="dishes-text">Looking for something delicious?</p>
@@ -177,7 +203,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews hidden">
         <div class="container reviews-container">
           <h2 class="reviews-title">What our Customers Say</h2>
           <p class="reviews-text">
@@ -261,7 +287,7 @@
         </div>
       </section>
 
-      <section class="order">
+      <section class="order hidden">
         <div class="container order-container">
           <div class="feedback-wrap">
             <h2 class="order-title">Subscribe To Get Special Offers</h2>
@@ -291,7 +317,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-nav-wrap">
           <a class="logo" href="./index.html"
@@ -334,7 +360,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="close-form-btn" type="submit">
           <svg class="cross-icon" width="12" height="12">
