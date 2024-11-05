@@ -57,19 +57,6 @@ textarea {
 
 /*------------header-container------------*/
 
-.header {
-  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
-  background: #fefefe;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-right: auto;
-}
 
 .nav {
   margin-right: 32px;
