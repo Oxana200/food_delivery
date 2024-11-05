@@ -383,11 +383,6 @@ textarea {
         padding-bottom: 69px;
     }
 
-    .start-container {
-        justify-content: start;
-        gap: 143px;
-    }
-
     .start-text-wrap {
         min-width: 511px;
     }
@@ -412,4 +407,215 @@ textarea {
     .salad-border:hover {
         border: 26px solid #bbf330;
     }
+}
+
+
+
+/*------------about-us-container------------*/
+
+.apple {
+    margin-bottom: 60px;
+}
+
+.title-about-us {
+    padding-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    width: 280px;
+}
+
+.text-about-us {
+    padding-bottom: 28px;
+    line-height: 1.4;
+    width: 280px;
+    font-size: 14px;
+}
+
+.icon {
+    fill: #7eb101;
+    margin-bottom: 8px;
+}
+
+.advantage-title {
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.advantage-text {
+    padding-bottom: 24px;
+    line-height: 1.5;
+    width: 280px;
+    font-size: 14px;
+}
+
+.advantage-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #7eb101;
+    border-radius: 30px;
+    width: 106px;
+    height: 40px;
+    background: inherit;
+    margin-top: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantage-button:hover,
+.advantage-button:focus {
+    background: #bbf330;
+    border: nonee;
+}
+
+@media screen and (min-width: 768px) {
+    .title-about-us {
+        padding-bottom: 20px;
+        width: 526px;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .text-about-us {
+        padding-bottom: 33px;
+        line-height: 1.5;
+        width: 500px;
+        font-size: 16px;
+    }
+
+    .our-advantages {
+        display: flex;
+        gap: 80px;
+    }
+
+    .our-advantage {
+        width: 288px;
+    }
+
+    .advantage-text {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .about-us {
+        background: #ffe550;
+    }
+
+    .about-us-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 205px;
+        padding-bottom: 110px;
+    }
+
+    .apple-img-border {
+        border-radius: 100%;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        width: 550px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apple-img {
+        border-radius: 100%;
+        background-color: #fefefe;
+        width: 502px;
+        height: 502px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .apple {
+        margin-top: -100px;
+    }
+
+    .our-advantages {
+        gap: 67px;
+    }
+
+    .our-advantage {
+        width: 253px;
+    }
+
+    .link-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        background-color: #fefefe;
+        margin-bottom: 8px;
+    }
+
+    .about-us-wrap {
+        padding-left: 90px;
+    }
+
+    .advantage-button {
+        background: #fff;
+
+    }
+}
+
+
+
+/*------------dishes-container------------*/
+
+.dishes-container {
+    padding-top: 132px;
+}
+
+.dishes-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.dishes-text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chicken {
+    display: none;
+}
+
+.salad-with-salmon {
+    display: none;
+}
+
+.borshch {
+    display: none;
+}
+
+.img-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 11px solid #ffe550;
+    width: 280px;
+    height: 282px;
+    margin-bottom: 20px;
+    padding: 18px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-border:hover {
+    border: 11px solid #bbf330;
+}
+
+.img-border-hidden {
+    display: none;
 }

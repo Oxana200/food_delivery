@@ -79,21 +79,64 @@
             <button class="main-button-start" type="button">Order Now</button>
           </div>
           <div class="salad-border">
-            <img
-              class="start-salad"
-              src="images/main-dish-dsk.png"
-              alt="plate of salad"
-              width=""
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/main-dish-dsk.png    1x,
+                  ./images/main-dish-dsk-2x.png 2x
+                "
+                media="(min-width: 1158px)"
+              />
+              <source
+                srcset="
+                  ./images/main-dish-tab.png    1x,
+                  ./images/main-dish-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="start-salad"
+                src="images/main-dish-tab.png"
+                alt="plate of salad"
+                width=""
+              />
+            </picture>
           </div>
         </div>
       </section>
 
-      <section class="about-us hidden">
+      <section class="about-us">
         <div class="container about-us-container">
           <div class="apple-img-border">
             <div class="apple-img">
-              <img class="apple" src="images/apple.png" alt="green apple" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/apple-dsk.png    1x,
+                    ./images/apple-dsk-2x.png 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/apple-tab.png    1x,
+                    ./images/apple-tab-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/apple-mob.png    1x,
+                    ./images/apple-mob-2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="apple"
+                  src="images/apple-mob.png"
+                  alt="green apple"
+                />
+              </picture>
             </div>
           </div>
           <div class="about-us-wrap">
@@ -132,76 +175,180 @@
                 </p>
               </li>
             </ul>
-            <button type="button" class="main-button advantage-button">
-              Order Now
-            </button>
+            <button type="button" class="advantage-button">Order Now</button>
           </div>
         </div>
       </section>
 
-      <section class="dishes hidden">
+      <section class="dishes">
         <div class="container dishes-container">
           <h2 class="dishes-title">Some of Our Favorites</h2>
           <p class="dishes-text">Looking for something delicious?</p>
           <ul class="dishes-list">
             <li class="dish">
               <div class="img-border">
-                <img
-                  src="./images/gamburger.png"
-                  alt="gamburger"
-                  width="315"
-                  height="315"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gamburger-dsk.png    1x,
+                      ./images/gamburger-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gamburger-tab.png    1x,
+                      ./images/gamburger-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gamburger-mob.png    1x,
+                      ./images/gamburger-mob-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/gamburger-mob.png"
+                    alt="gamburger"
+                    width="315"
+                  />
+                </picture>
               </div>
             </li>
             <li class="dish">
               <div class="img-border">
-                <img
-                  src="./images/Pasta.png"
-                  alt="pasta"
-                  width="315"
-                  height="315"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pasta-dsk.png    1x,
+                      ./images/pasta-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pasta-tab.png    1x,
+                      ./images/pasta-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pasta-mob.png    1x,
+                      ./images/pasta-mob-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images/pasta-mob.png" alt="pasta" width="315" />
+                </picture>
               </div>
             </li>
             <li class="dish">
               <div class="img-border">
-                <img
-                  src="./images/pizza.png"
-                  alt="pizza"
-                  width="315"
-                  height="315"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pizza-dsk.png    1x,
+                      ./images/pizza-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pizza-tab.png    1x,
+                      ./images/pizza-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pizza-mob.png    1x,
+                      ./images/pizza-mob-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img src="./images/pizza-mob.png" alt="pizza" width="315" />
+                </picture>
               </div>
             </li>
             <li class="dish">
-              <div class="img-border">
-                <img
-                  src="./images/chicken.png"
-                  alt="rice and chicken"
-                  width="315"
-                  height="315"
-                />
+              <div class="img-border-hidden">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/chicken-dsk.png    1x,
+                      ./images/chicken-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/chicken-tab.png    1x,
+                      ./images/chicken-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="chicken"
+                    src="./images/chicken-tab.png"
+                    alt="chicken"
+                    width="315"
+                  />
+                </picture>
               </div>
             </li>
             <li class="dish">
-              <div class="img-border">
-                <img
-                  src="./images/salat.png"
-                  alt="salad with salmon"
-                  width="315"
-                  height="315"
-                />
+              <div class="img-border-hidden">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/salad-with-salmon-dsk.png    1x,
+                      ./images/salad-with-salmon-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/salad-with-salmon-tab.png    1x,
+                      ./images/salad-with-salmon-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="salad-with-salmon"
+                    src="./images/salad-with-salmon-tab.png"
+                    alt="salad-with-salmon"
+                    width="315"
+                  />
+                </picture>
               </div>
             </li>
             <li class="dish">
-              <div class="img-border">
-                <img
-                  src="./images/borshch.png"
-                  alt="borshch"
-                  width="315"
-                  height="315"
-                />
+              <div class="img-border-hidden">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/borshch-dsk.png    1x,
+                      ./images/borshch-dsk-2x.png 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/borshch-tab.png    1x,
+                      ./images/borshch-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="borshch"
+                    src="./images/borshch-tab.png"
+                    alt="borshch"
+                    width="315"
+                  />
+                </picture>
               </div>
             </li>
           </ul>
