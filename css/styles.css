@@ -446,7 +446,7 @@ textarea {
 .advantage-text {
     padding-bottom: 24px;
     line-height: 1.5;
-    width: 280px;
+    width: 260px;
     font-size: 14px;
 }
 
@@ -460,6 +460,8 @@ textarea {
     height: 40px;
     background: inherit;
     margin-top: 4px;
+    font-weight: 500;
+    font-size: 13px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -506,7 +508,7 @@ textarea {
 
     .about-us-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding-top: 205px;
         padding-bottom: 110px;
@@ -515,18 +517,19 @@ textarea {
     .apple-img-border {
         border-radius: 100%;
         border: 5px solid rgba(255, 255, 255, 0.5);
-        width: 550px;
-        height: 550px;
+        width: 530px;
+        height: 532px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 24px;
     }
 
     .apple-img {
         border-radius: 100%;
         background-color: #fefefe;
-        width: 502px;
-        height: 502px;
+        width: 482px;
+        height: 482px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -534,7 +537,7 @@ textarea {
     }
 
     .apple {
-        margin-top: -100px;
+        margin-top: -75px;
     }
 
     .our-advantages {
@@ -545,7 +548,7 @@ textarea {
         width: 253px;
     }
 
-    .link-wrap {
+    .icon-wrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -556,8 +559,13 @@ textarea {
         margin-bottom: 8px;
     }
 
+    .icon {
+
+        margin-bottom: 0px;
+    }
+
     .about-us-wrap {
-        padding-left: 90px;
+        justify-content: space-between;
     }
 
     .advantage-button {
@@ -604,8 +612,8 @@ textarea {
     justify-content: center;
     border-radius: 50%;
     border: 11px solid #ffe550;
-    width: 280px;
-    height: 282px;
+    width: 269px;
+    height: 271px;
     margin-bottom: 20px;
     padding: 18px;
 
@@ -619,3 +627,71 @@ textarea {
 .img-border-hidden {
     display: none;
 }
+
+@media screen and (min-width: 768px) {
+    .dishes-container {
+        padding-top: 188px;
+        padding-bottom: 160px;
+    }
+
+    .dishes-title {
+        font-size: 42px;
+    }
+
+    .chicken {
+        display: block;
+    }
+
+    .salad-with-salmon {
+        display: block;
+    }
+
+    .borshch {
+        display: block;
+    }
+
+    .img-border-hidden {
+        display: flex;
+    }
+
+    .dishes-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 101px;
+    }
+
+    .img-border {
+        border: 14px solid #ffe550;
+        width: 322px;
+        height: 324px;
+        padding: 20px;
+
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .img-border:hover {
+        border: 14px solid #bbf330;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .img-border {
+        border: 16px solid #ffe550;
+        width: 329px;
+        height: 317px;
+        padding: 25px;
+
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .img-border:hover {
+        border: 16px solid #bbf330;
+    }
+}
+
+
+
+/*-----------rewiews-container------------*/
