@@ -388,7 +388,8 @@
               </p>
               <div class="person-wrap">
                 <img
-                  src="./images/person-1.png"
+                  srcset="./images/user1.png 1x, ./images/user1-2x.png 2x"
+                  src="./images/user1.png"
                   width="48"
                   height="49"
                   alt="Men in a grey costume"
@@ -424,7 +425,8 @@
               </p>
               <div class="person-wrap">
                 <img
-                  src="/images/person-2.png"
+                  srcset="./images/user2.png 1x, ./images/user2-2x.png 2x"
+                  src="./images/user2.png"
                   width="48"
                   height="49"
                   alt="Women in a yellow shirt"
@@ -439,32 +441,30 @@
         </div>
       </section>
 
-      <section class="order hidden">
+      <section class="order">
         <div class="container order-container">
+          <img
+            class="order-img"
+            src="./images/banan-mob.png"
+            alt="banan"
+            width="608"
+          />
           <div class="feedback-wrap">
             <h2 class="order-title">Subscribe To Get Special Offers</h2>
             <p class="order-text">
               Order now and receive 10% off your first meal with Enjoy Your
               Favorite Food From Anywhere.
             </p>
-            <input
-              class="order-input"
-              type="email"
-              placeholder="Enter your email"
-              name="user-email"
-            />
-            <button class="order-button main-button" type="submit">
-              Subscribe
-            </button>
+            <div class="order-input-wrap">
+              <input
+                class="order-input"
+                type="email"
+                placeholder="Enter your email"
+                name="user-email"
+              />
+              <button class="order-button" type="submit">Subscribe</button>
+            </div>
           </div>
-
-          <img
-            class="order-img"
-            src="./images/banan.png"
-            alt="banan"
-            width="608"
-            height="266"
-          />
         </div>
       </section>
     </main>
