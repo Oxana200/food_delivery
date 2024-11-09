@@ -85,7 +85,7 @@
                   ./images/main-dish-dsk.png    1x,
                   ./images/main-dish-dsk-2x.png 2x
                 "
-                media="(min-width: 1158px)"
+                media="(min-width: 1280px)"
               />
               <source
                 srcset="
@@ -98,7 +98,6 @@
                 class="start-salad"
                 src="images/main-dish-tab.png"
                 alt="plate of salad"
-                width=""
               />
             </picture>
           </div>
@@ -115,7 +114,7 @@
                     ./images/apple-dsk.png    1x,
                     ./images/apple-dsk-2x.png 2x
                   "
-                  media="(min-width: 1158px)"
+                  media="(min-width: 1280px)"
                 />
                 <source
                   srcset="
@@ -193,7 +192,7 @@
                       ./images/gamburger-dsk.png    1x,
                       ./images/gamburger-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -225,7 +224,7 @@
                       ./images/pasta-dsk.png    1x,
                       ./images/pasta-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -253,7 +252,7 @@
                       ./images/pizza-dsk.png    1x,
                       ./images/pizza-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -281,7 +280,7 @@
                       ./images/chicken-dsk.png    1x,
                       ./images/chicken-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -307,7 +306,7 @@
                       ./images/salad-with-salmon-dsk.png    1x,
                       ./images/salad-with-salmon-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -333,7 +332,7 @@
                       ./images/borshch-dsk.png    1x,
                       ./images/borshch-dsk-2x.png 2x
                     "
-                    media="(min-width: 1158px)"
+                    media="(min-width: 1280px)"
                   />
                   <source
                     srcset="
@@ -443,12 +442,21 @@
 
       <section class="order">
         <div class="container order-container">
-          <img
-            class="order-img"
-            src="./images/banan-mob.png"
-            alt="banan"
-            width="608"
-          />
+          <picture>
+            <source
+              srcset="./images/banan-dsk.png 1x, ./images/banan-dsk-2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/banan-tab.png 1x, ./images/banan-tab-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/banan-mob.png 1x, ./images/banan-mob-2x.png 2x"
+              media="(max-width: 768px)"
+            />
+            <img class="order-img" src="./images/banan-mob.png" alt="banan" />
+          </picture>
           <div class="feedback-wrap">
             <h2 class="order-title">Subscribe To Get Special Offers</h2>
             <p class="order-text">
@@ -469,38 +477,40 @@
       </section>
     </main>
 
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-nav-wrap">
-          <a class="logo" href="./index.html"
-            ><img src="./images/Vector.svg" alt="logo"
-          /></a>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li><a class="nav-link" href="">Home</a></li>
-              <li><a class="nav-link" href="">About</a></li>
-              <li><a class="nav-link" href="">Service</a></li>
-              <li><a class="nav-link" href="">Menu</a></li>
-              <li><a class="nav-link" href="">Contact</a></li>
-            </ul>
-          </nav>
+        <div class="footer-wrap">
+          <div class="footer-nav-wrap">
+            <a class="logo-footer" href="./index.html"
+              ><img src="./images/logo.svg" alt="logo"
+            /></a>
+            <nav class="footer-nav">
+              <ul class="footer-nav-list">
+                <li><a class="footer-nav-link" href="">Home</a></li>
+                <li><a class="footer-nav-link" href="">About</a></li>
+                <li><a class="footer-nav-link" href="">Service</a></li>
+                <li><a class="footer-nav-link" href="">Menu</a></li>
+                <li><a class="footer-nav-link" href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-input-wrap">
+            <p class="footer-input-label">Subscribe</p>
+            <div class="input-btn-wrap">
+              <input
+                class="footer-input"
+                type="email"
+                placeholder="Enter your email"
+                name="user-email"
+              />
+              <button class="footer-button" type="submit">Subscribe</button>
+            </div>
+            <p class="footer-input-text">
+              By subscribing you agree to with our
+              <a class="footer-link" href="">Privacy Policy</a>
+            </p>
+          </div>
         </div>
-        <div class="footer-input-wrap">
-          <p class="footer-input-label">Subscribe</p>
-          <input
-            class="footer-input"
-            type="email"
-            placeholder="Enter your email"
-            name="user-email"
-          />
-          <button class="footer-button" type="submit">Subscribe</button>
-          <p class="footer-input-text">
-            By subscribing you agree to with our
-            <a class="footer-link" href="">Privacy Policy</a>
-          </p>
-        </div>
-      </div>
-      <div class="container">
         <div class="right-wrap">
           <div class="right-wrap-links">
             <a class="footer-link" href="">Privacy Policy</a>

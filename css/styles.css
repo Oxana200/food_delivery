@@ -62,10 +62,11 @@ textarea {
 }
 
 /*--------------common------------*/
+
 .container {
     max-width: 320px;
-    padding: 0 20px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,9 +76,9 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        max-width: 1440px;
         padding: 0 16px;
     }
 }
@@ -289,9 +290,8 @@ textarea {
 
 /*------------start-container------------*/
 
-.start {
+.start-container {
     padding-top: 60px;
-    padding-bottom: 91px;
 }
 
 .start-title {
@@ -333,16 +333,13 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-    .start {
-        padding-top: 60px;
-        padding-bottom: 42px;
-    }
 
     .start-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 32px;
+        padding-top: 60px;
     }
 
     .start-salad {
@@ -381,8 +378,8 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1158px) {
-    .start {
+@media screen and (min-width: 1280px) {
+    .start-container {
         padding-top: 14px;
         padding-bottom: 69px;
     }
@@ -398,7 +395,7 @@ textarea {
     }
 
     .start-text {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     .salad-border {
@@ -417,19 +414,23 @@ textarea {
 
 /*------------about-us-container------------*/
 
+.about-us-container {
+    padding-top: 91px;
+}
+
 .apple {
     margin-bottom: 60px;
 }
 
 .title-about-us {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     font-weight: 700;
     font-size: 28px;
     width: 280px;
 }
 
 .text-about-us {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     line-height: 1.4;
     width: 280px;
     font-size: 14px;
@@ -441,14 +442,14 @@ textarea {
 }
 
 .advantage-title {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.4;
 }
 
 .advantage-text {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     line-height: 1.5;
     width: 260px;
     font-size: 14px;
@@ -480,15 +481,19 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .about-us-container {
+        padding-top: 42px;
+    }
+
     .title-about-us {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         width: 526px;
         font-size: 42px;
         line-height: 1.2;
     }
 
     .text-about-us {
-        padding-bottom: 33px;
+        margin-bottom: 33px;
         line-height: 1.5;
         width: 500px;
         font-size: 16px;
@@ -504,11 +509,11 @@ textarea {
     }
 
     .advantage-text {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .about-us {
         background: #ffe550;
     }
@@ -540,7 +545,6 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .apple {
@@ -567,7 +571,6 @@ textarea {
     }
 
     .icon {
-
         margin-bottom: 0px;
     }
 
@@ -587,7 +590,6 @@ textarea {
 
 .dishes-container {
     padding-top: 132px;
-    padding-bottom: 120px;
 }
 
 .dishes-title {
@@ -639,7 +641,6 @@ textarea {
 @media screen and (min-width: 768px) {
     .dishes-container {
         padding-top: 188px;
-        padding-bottom: 160px;
     }
 
     .dishes-title {
@@ -684,7 +685,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .dishes-container {
         padding-top: 120px;
         padding-bottom: 101px;
@@ -709,18 +710,18 @@ textarea {
 /*-----------rewiews-container------------*/
 
 .reviews-container {
-    padding-bottom: 17px;
+    padding-top: 120px;
 }
 
 .reviews-title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 28px;
 }
 
 .reviews-text {
     font-size: 14px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .review-wrap {
@@ -776,13 +777,17 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .reviews-container {
+        padding-top: 160px;
+    }
+
     .reviews-title {
         font-size: 42px;
     }
 
     .reviews-text {
         font-size: 16px;
-        padding-bottom: 32px;
+        margin-bottom: 32px;
     }
 
     .review-wrap-container {
@@ -792,15 +797,18 @@ textarea {
 
     .review-text {
         font-size: 18px;
-        margin-bottom: 40px;
+        margin-bottom: 44px;
     }
 }
 
-@media screen and (min-width: 1158px) {
-    .reviews {
+@media screen and (min-width: 1280px) {
+    .reviews-container {
         padding-top: 140px;
+        padding-bottom: 126px;
+    }
+
+    .reviews {
         background: #ffe550;
-        min-height: 620px;
     }
 
     .review-wrap-container {
@@ -821,6 +829,11 @@ textarea {
 
 
 /*------------order-container------------*/
+
+.order-container {
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
 
 .order-img {
     margin-bottom: 17px;
@@ -866,7 +879,6 @@ textarea {
 .order-button {
     display: block;
     margin-left: 177px;
-    margin-bottom: 60px;
     text-align: center;
     font-weight: 500;
     font-size: 13px;
@@ -891,6 +903,8 @@ textarea {
     .order-container {
         padding-top: 58px;
         padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
     }
 
     .order-title {
@@ -919,5 +933,236 @@ textarea {
 
     .order-button {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .order-container {
+        padding-top: 176px;
+        padding-bottom: 201px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-input-wrap {
+        gap: 22px;
+    }
+}
+
+
+
+/*------------footer-container------------*/
+
+.footer-container {
+    position: relative;
+
+    padding-top: 64px;
+    padding-bottom: 60px;
+    background-image: url(/images/fruit-bckg-mob.jpg);
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+@media screen and (min-resolution: 2dppx),
+(min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
+    .start-container {
+        background-image: url(/images/fruit-bckg-mob-2x.jpg);
+    }
+}
+
+.logo-footer {
+    position: absolute;
+
+    top: 60px;
+    left: 20px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #bbf330;
+}
+
+.footer-input-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.footer-input {
+    border: 0.85px solid #ffe550;
+    border-radius: 30px;
+    padding: 10px;
+    width: 279px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+    border: 0.85px solid #7eb101;
+    outline: none;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+    padding-right: 11px;
+    padding-bottom: 12px;
+}
+
+.footer-button {
+    border: 0.85px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 103px;
+    height: 42px;
+    background: transparent;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    border: 2px solid #ffe450;
+}
+
+.footer-input-text {
+    font-size: 10px;
+    margin-bottom: 120px;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #7eb101;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.right-wrap-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    font-size: 10px;
+}
+
+.right-text {
+    font-size: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        padding-top: 118px;
+        padding-bottom: 100px;
+        background-image: url(/images/fruit-bckg-tab.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        .start-container {
+            background-image: url(/images/fruit-bckg-tab-2x.jpg);
+        }
+    }
+
+    .logo-footer {
+        top: 100px;
+        left: 33px;
+    }
+
+    .footer-nav-list {
+        flex-direction: row;
+        gap: 28px;
+        margin-left: 216px;
+        margin-bottom: 57px;
+    }
+
+    .input-btn-wrap {
+        display: flex;
+        gap: 13px;
+    }
+
+    .footer-input-text {
+        font-size: 12px;
+        margin-bottom: 100px;
+    }
+
+    .right-wrap {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .right-wrap-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
+    .right-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-container {
+        padding-top: 118px;
+        padding-bottom: 100px;
+        background-image: url(/images/fruit-bckg-dsk.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        .start-container {
+            background-image: url(/images/fruit-bckg-dsk-2x.jpg);
+        }
+    }
+
+    .logo-footer {
+        left: 21px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-input-wrap {
+        align-self: flex-end;
     }
 }
