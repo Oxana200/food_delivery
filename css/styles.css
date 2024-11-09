@@ -315,7 +315,7 @@ textarea {
     background-color: #ffe450;
 }
 
-.start-salad {
+.salad-border {
     display: none;
 }
 
@@ -348,6 +348,7 @@ textarea {
     }
 
     .salad-border {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -362,6 +363,70 @@ textarea {
 
     .salad-border:hover {
         border: 14px solid #bbf330;
+    }
+
+    /*------------slider------------*/
+
+    .single-item {
+        width: 100%;
+    }
+
+    .single-item div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slick-prev {
+        position: absolute;
+        right: 50px;
+        width: 42px;
+        height: 36px;
+        background-color: #fff;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slick-next {
+        position: absolute;
+        left: 250px;
+        width: 42px;
+        height: 36px;
+        background-color: #fff;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slick-next:hover,
+    .slick-next:focus,
+    .slick-prev:hover,
+    .slick-prev:focus {
+        background-color: #fff;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+    }
+
+    .slick-prev svg,
+    .slick-next svg {
+        position: relative;
+        right: 10px;
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slick-next svg:hover,
+    .slick-next svg:focus,
+    .slick-prev svg:hover,
+    .slick-prev svg:focus {
+        fill: #7eb101;
+    }
+
+    .slick-next svg:active,
+    .slick-prev svg:active {
+        fill: #2c2c2c;
     }
 }
 
@@ -394,6 +459,17 @@ textarea {
 
     .salad-border:hover {
         border: 26px solid #bbf330;
+    }
+
+    /*------------slider------------*/
+
+    .slick-prev {
+
+        left: -30px;
+    }
+
+    .slick-next {
+        left: 467px;
     }
 }
 
@@ -1192,6 +1268,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1202,6 +1279,7 @@ textarea {
 }
 
 .cross-icon {
+    flex-shrink: 0;
     fill: #2c2c2c;
     height: 12px;
     width: 12px;
