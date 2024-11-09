@@ -964,6 +964,7 @@ textarea {
     background-image: url(../images/fruit-bckg-mob.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
+    background-size: contain;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
 }
 
@@ -971,6 +972,7 @@ textarea {
 (min-resolution: 192dpi),
 (-webkit-min-device-pixel-ratio: 2) {
     .footer-container {
+        background-size: contain;
         background-image: url(../images/fruit-bckg-mob-2x.jpg);
     }
 }
@@ -1093,6 +1095,7 @@ textarea {
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
         .footer-container {
+            background-size: contain;
             background-image: url(../images/fruit-bckg-tab-2x.jpg);
         }
     }
@@ -1150,6 +1153,7 @@ textarea {
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
         .footer-container {
+            background-size: contain;
             background-image: url(../images/fruit-bckg-dsk-2x.jpg);
         }
     }
