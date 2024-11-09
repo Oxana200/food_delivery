@@ -112,7 +112,6 @@ textarea {
 
 .burger-btn {
     padding: 0;
-    border: none;
     background-color: transparent;
     margin: 0;
 }
@@ -163,7 +162,6 @@ textarea {
         width: 100%;
         height: 1px;
         border-radius: 2px;
-        font-weight: 400;
         background-color: #bbf330;
     }
 
@@ -188,19 +186,16 @@ textarea {
         border-radius: 30px;
         min-width: 98px;
         height: 32px;
-        background: #bbf330;
-        border: none;
+        background-color: #bbf330;
         font-weight: 500;
         font-size: 13px;
-        line-height: 1.5;
-
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .main-button:hover,
     .main-button:focus {
-        background: #ffe450;
+        background-color: #ffe450;
     }
 }
 
@@ -241,10 +236,7 @@ textarea {
 .mobile-menu-close {
     width: 12px;
     height: 12px;
-    border: none;
-    background: none;
-    color: black;
-    cursor: pointer;
+    background-color: transparent;
     padding: 0;
 
     position: absolute;
@@ -262,7 +254,6 @@ textarea {
 .mobile-menu-close:hover,
 .mobile-menu-close:focus {
     background-color: transparent;
-    border: none;
 }
 
 .mobile-menu-close:focus .cross-icon,
@@ -272,19 +263,16 @@ textarea {
 
 .menu-nav-link {
     display: block;
-    color: #000;
     margin-bottom: 32px;
 }
 
 .menu-nav-link:hover,
 .menu-nav-link:focus {
     font-weight: 700;
-    color: #2c2c2c;
 }
 
 .menu-nav-current {
     font-weight: 700;
-    color: #2c2c2c;
 }
 
 
@@ -314,19 +302,17 @@ textarea {
     border-radius: 30px;
     min-width: 98px;
     height: 32px;
-    background: #bbf330;
+    background-color: #bbf330;
     border: none;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1.5;
-    color: #2c2c2c;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button-start:hover,
 .main-button-start:focus {
-    background: #ffe450;
+    background-color: #ffe450;
 }
 
 .start-salad {
@@ -464,13 +450,10 @@ textarea {
     border-radius: 30px;
     width: 106px;
     height: 40px;
-    background: inherit;
+    background-color: inherit;
     margin-top: 4px;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1.5;
-    color: #2c2c2c;
-    padding: 0;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -478,7 +461,6 @@ textarea {
 .advantage-button:hover,
 .advantage-button:focus {
     background: #bbf330;
-    border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -495,9 +477,7 @@ textarea {
 
     .text-about-us {
         margin-bottom: 33px;
-        line-height: 1.5;
         width: 500px;
-        font-size: 16px;
     }
 
     .our-advantages {
@@ -516,7 +496,7 @@ textarea {
 
 @media screen and (min-width: 1280px) {
     .about-us {
-        background: #ffe550;
+        background-color: #ffe550;
     }
 
     .about-us-container {
@@ -581,7 +561,6 @@ textarea {
 
     .advantage-button {
         background: #fff;
-
     }
 }
 
@@ -767,14 +746,12 @@ textarea {
 .reviewers-name {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.5;
     margin-bottom: 2px;
 }
 
 .reviewers-text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -888,17 +865,14 @@ textarea {
     padding: 10px 20px;
     width: 103px;
     height: 42px;
-    background: #bbf330;
-    border: none;
-    color: #2c2c2c;
+    background-color: #bbf330;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
 .order-button:focus {
-    background: #ffe450;
-
+    background-color: #ffe450;
 }
 
 @media screen and (min-width: 768px) {
@@ -1042,9 +1016,7 @@ textarea {
     text-align: center;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1.5;
     margin-bottom: 24px;
-    color: #2c2c2c;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1214,7 +1186,6 @@ textarea {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
     width: 40px;
     height: 40px;
-    border: none;
     position: fixed;
     top: 12px;
     right: 12px;
@@ -1227,7 +1198,7 @@ textarea {
 
 .close-form-btn:focus,
 .close-form-btn:hover {
-    background: #bbf330;
+    background-color: #bbf330;
 }
 
 .cross-icon {
@@ -1238,14 +1209,12 @@ textarea {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-    color: #2c2c2c;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .form-subtitle {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.4;
     margin-bottom: 2px;
 }
@@ -1263,7 +1232,6 @@ textarea {
 
 .form-input::placeholder {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.25;
     color: #c4c4c4;
 }
@@ -1287,14 +1255,13 @@ textarea {
     text-align: center;
     margin: 32px auto 0 auto;
     align-self: center;
-    color: #2c2c2c;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:focus,
 .modal-form-btn:hover {
-    background: #bbf330;
+    background-color: #bbf330;
 }
 
 @media screen and (min-width: 768px) {
