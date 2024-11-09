@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     color: #2c2c2c;
@@ -1173,5 +1169,133 @@ textarea {
 
     .footer-input-wrap {
         align-self: flex-end;
+    }
+}
+
+
+
+/*------------modal-window------------*/
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(94, 99, 99, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    min-height: 449px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    background: #ffe550;
+    border-radius: 30px;
+    padding: 32px 32px 0px 32px;
+}
+
+.close-form-btn {
+    border-radius: 100%;
+    fill: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-form-btn:focus,
+.close-form-btn:hover {
+    background: #bbf330;
+}
+
+.cross-icon {
+    fill: #2c2c2c;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    border-radius: 30px;
+    height: 48px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    padding-left: 12px;
+    outline: transparent;
+}
+
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #c4c4c4;
+}
+
+.form-input:focus,
+.form-input:hover {
+    border: 1px solid #7eb101;
+}
+
+.input-wrap {
+    margin-bottom: 24px;
+}
+
+.modal-form-btn {
+    border: 2px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 106px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    margin: 32px auto 0 auto;
+    align-self: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:focus,
+.modal-form-btn:hover {
+    background: #bbf330;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 458px;
     }
 }
