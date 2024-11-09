@@ -963,7 +963,6 @@ textarea {
     padding-bottom: 60px;
     background-image: url(../images/fruit-bckg-mob.jpg);
     background-position: bottom center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
 }
