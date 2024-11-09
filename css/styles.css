@@ -971,7 +971,7 @@ textarea {
 @media screen and (min-resolution: 2dppx),
 (min-resolution: 192dpi),
 (-webkit-min-device-pixel-ratio: 2) {
-    .start-container {
+    .footer-container {
         background-image: url(/images/fruit-bckg-mob-2x.jpg);
     }
 }
@@ -1093,7 +1093,7 @@ textarea {
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
-        .start-container {
+        .footer-container {
             background-image: url(/images/fruit-bckg-tab-2x.jpg);
         }
     }
@@ -1150,7 +1150,7 @@ textarea {
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
-        .start-container {
+        .footer-container {
             background-image: url(/images/fruit-bckg-dsk-2x.jpg);
         }
     }
