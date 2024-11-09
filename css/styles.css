@@ -961,7 +961,7 @@ textarea {
 
     padding-top: 64px;
     padding-bottom: 60px;
-    background-image: url(/images/fruit-bckg-mob.jpg);
+    background-image: url(../images/fruit-bckg-mob.jpg);
     background-position: bottom center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -972,7 +972,7 @@ textarea {
 (min-resolution: 192dpi),
 (-webkit-min-device-pixel-ratio: 2) {
     .footer-container {
-        background-image: url(/images/fruit-bckg-mob-2x.jpg);
+        background-image: url(../images/fruit-bckg-mob-2x.jpg);
     }
 }
 
@@ -1087,14 +1087,14 @@ textarea {
     .footer-container {
         padding-top: 118px;
         padding-bottom: 100px;
-        background-image: url(/images/fruit-bckg-tab.jpg);
+        background-image: url(../images/fruit-bckg-tab.jpg);
     }
 
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
         .footer-container {
-            background-image: url(/images/fruit-bckg-tab-2x.jpg);
+            background-image: url(../images/fruit-bckg-tab-2x.jpg);
         }
     }
 
@@ -1144,14 +1144,14 @@ textarea {
     .footer-container {
         padding-top: 118px;
         padding-bottom: 100px;
-        background-image: url(/images/fruit-bckg-dsk.jpg);
+        background-image: url(../images/fruit-bckg-dsk.jpg);
     }
 
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
         .footer-container {
-            background-image: url(/images/fruit-bckg-dsk-2x.jpg);
+            background-image: url(../images/fruit-bckg-dsk-2x.jpg);
         }
     }
 
