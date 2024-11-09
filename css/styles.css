@@ -1203,6 +1203,8 @@ textarea {
 
 .cross-icon {
     fill: #2c2c2c;
+    height: 12px;
+    width: 12px;
 }
 
 .form-title {
