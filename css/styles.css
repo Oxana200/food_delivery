@@ -134,6 +134,10 @@ textarea {
         display: none;
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     .header-container {
         align-items: center;
     }
